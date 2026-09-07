@@ -22,3 +22,22 @@
 ## Next bite
 
 <!-- The single next bite this opens, if any. -->
+
+## Decision
+
+<!-- The trailer the PR-time deposit reads to draw its edges: on merge it
+     records which decisions this PR touched, alongside the code at the merge
+     sha and how CI went (forge-play/Forge, forge/deposit.py;
+     the-forge-shape.md §12).
+
+     The value is a PAIR ID PREFIX from the project store — 8 or more hex
+     characters — not prose. The regex is
+     `^\s*decision:\s*([0-9a-fA-F]{8,})\s*$`, one trailer per line; repeat the
+     line for more than one, and duplicates collapse. A prefix that matches
+     nothing, or matches more than one pair, is reported and skipped — never
+     guessed. The model never names a decision; a regular expression does.
+
+     No decision to point at? Delete the line. An unmatched trailer is noise
+     in the deposit's report, and a blank one deposits nothing either way. -->
+
+Decision: 
